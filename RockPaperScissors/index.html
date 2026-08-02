@@ -3,9 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
     <title>RockPaperScissor</title>
   </head>
   <body>
+    <main>
+      <h1>Rock Paper Scissors</h1>
+
+      <section aria-label="Marcador">
+        <p>Jugador: <span id="score-player">0</span></p>
+        <p>Computadora: <span id="score-computer">0</span></p>        
+      </section>
+
+      <div class="choices" role="group" aria-label="Elige tu jugada">
+        <button data-choice="rock">Piedra</button>
+        <button data-choice="paper">Papel</button>
+        <button data-choice="scissors">Tijeras</button>
+      </div>
+
+      <div id="result" aria-live="polite" role="status"></div>
+    </main>
     <script src="main.js"></script>
   </body>
 </html>
